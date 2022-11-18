@@ -1,0 +1,57 @@
+@layer components{
+
+  /* Butons */
+  .btn{
+    @apply w-32 bg-primary text-center text-white font-bold p-2 rounded-lg hover:bg-primary-light;
+  }
+
+  .btn-secondary{
+    @apply w-32 bg-secondary text-center text-black font-bold p-2 rounded-lg hover:bg-secondary-light;
+  }
+
+  .btn-black{
+    @apply w-32 bg-black text-center text-white font-bold p-2 rounded-lg hover:bg-black-light;
+  }
+
+  /* Titles */
+  .title-primary{
+    @apply text-center text-3xl font-bold text-primary;
+  }
+
+  .title-secondary{
+    @apply text-center text-3xl font-bold text-secondary;
+  }
+
+  .title-black{
+    @apply text-center text-3xl font-bold text-black;
+  }
+
+  .section-title{
+    @apply text-lg text-primary font-bold;
+  }
+
+  .section-title-secondary{
+    @apply text-lg text-secondary font-bold;
+  }
+
+  .section-title-white{
+    @apply text-lg text-white font-bold;
+  }
+
+  /* Cards */
+  .review-card {
+    @apply w-[300px] h-[100%] p-8 flex flex-col justify-center  items-center gap-3 border-2 border-black rounded-2xl;
+    
+    p {
+      @apply text-center text-xl text-black-lighter;
+    }
+
+    i {
+      @apply text-2xl text-yellow-300;
+    }
+    img {
+      @apply w-32 h-32 rounded-full;
+    } 
+  }
+}
+

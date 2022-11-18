@@ -1,0 +1,17 @@
+@layer components {
+  .our-view-container {
+    @apply container mx-auto max-w-3xl flex flex-col justify-evenly items-center gap-y-8 py-9;
+
+    .view-cards {
+      @apply flex items-center justify-between gap-x-52;
+
+      .card {
+        @apply w-[400px] h-80 p-8 flex flex-col justify-center items-center border-2 border-black rounded-2xl;
+
+        p {
+          @apply text-center text-xl text-primary;
+        }
+      }
+    }
+  }
+}

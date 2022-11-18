@@ -1,0 +1,14 @@
+@layer components {
+  .reviews-container {
+    @apply container mx-auto flex flex-col items-center justify-between gap-14;
+
+    .title {
+      @apply text-center text-3xl underline font-bold text-primary;
+    }
+
+    .reviews-cards-container {
+      @apply flex flex-row items-center justify-evenly gap-x-12;
+    }
+  }
+
+}

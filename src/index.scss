@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("components/landing/style/_header.scss");
+@import url("components/landing/style/_hero.scss");
+@import url("components/landing/style/_functions.scss");
+@import url("components/landing/style/_road-map.scss");
+@import url("components/landing/style/_our-view.scss");
+@import url("components/landing/style/_road-map.scss");
+@import url("components/landing/style/_reviews.scss");
+@import url("components/landing/style/_free-add.scss");
+@import url("components/landing/style/_footer.scss");
+@import url("global/_global-components.scss");
+@import url("global/_variables.scss");
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+@layer components {
+  .app {
+
+    & main {
+      @apply flex flex-col gap-10;
+    }
+  }
+}

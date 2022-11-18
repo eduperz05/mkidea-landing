@@ -1,0 +1,17 @@
+@layer components {
+  .functionality-container {
+    @apply h-96 container mx-auto flex items-center justify-evenly;
+
+    .functionality {
+      @apply h-52 max-w-[160px] py-2 border-solid border-black border-2 rounded-2xl text-center;
+
+      i {
+        @apply text-3xl relative bottom-8 bg-white text-primary font-bold;
+      }
+
+      p {
+        @apply p-4 text-black-lighter;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@layer components {
+  .free-add-container {
+    @apply container mx-auto py-10 flex flex-row justify-center items-center gap-44;
+
+    .text-button-container {
+      @apply flex flex-col gap-6 items-center
+    }
+
+    p {
+      @apply text-center text-xl text-primary;
+    }
+  }
+}
