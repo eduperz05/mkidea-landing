@@ -1,26 +1,35 @@
-import { html } from "lit";
-import { customElement, property } from "lit/decorators.js";
-import { TailwindElement } from "../../shared/tailwind.element";
+import { LitElement, html } from "lit";
+import "./../login/login.component";
 
-import style from "./header.component.scss";
+class HeaderComponent extends LitElement {
 
-@customElement("header-component")
-class HeaderComponent extends TailwindElement(style) {
-
-  @property()
-    name?: string = "World";
-
-  render() {
-    return html`<div class="red">Ejemplo 2</div>`;
+  
+  createRenderRoot() {
+    return this;
   }
 
-  createRenderRoot() { 
-    return this;  
+  registerDialog() {
+    return html`<login-component></login-component>`;
+  }
+
+  render() {
+    return html`
+    <header id="header" class="header">
+      <nav class="header-navbar">
+        <img src="img/Logo.png" width="60" alt="">
+        <section class="navbar-navigation">
+          <a class="nav-item" href="">About Us</a>
+          <a class="nav-item" href="">Contact</a>
+          <a class="nav-item" href="">How it works</a>
+        </section>
+        <div class="nav-log-container">
+          <a class="btn" @click=${this.registerDialog} href="">Log In</a>
+          <a class="btn" href="">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+    `;
   }
 }
 
 customElements.define("header-component", HeaderComponent);
-// <div class="bg-gray-200"> 
-//   <p>Hello, <b>${this.name}</b> !</p>
-//   <button class="bg-blue-200 text-yellow-200 p-2 rounded-full text-2xl">Hello world!</button>
-// </div>

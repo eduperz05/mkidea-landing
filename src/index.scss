@@ -1,7 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import url("components/landing/style/_header.scss");
+@import url("components/header/header.component.scss");
 @import url("components/landing/style/_hero.scss");
 @import url("components/landing/style/_functions.scss");
 @import url("components/landing/style/_road-map.scss");

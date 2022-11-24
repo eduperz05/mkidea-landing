@@ -1,4 +1,5 @@
 import path from "path";
+import { visualizer } from "rollup-plugin-visualizer";
 const isGitHubPages = true;
 const folderName = path.basename(process.cwd()) + "/";
 const mode = process.env.NODE_ENV === "production" ? "production" : "development";
@@ -12,5 +13,6 @@ export default {
   build: {
     outDir: "../dist",
     assetsDir: "./"
-  }
+  },
+  plugins: [visualizer()]
 };
