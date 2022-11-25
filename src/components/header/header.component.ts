@@ -3,13 +3,8 @@ import "./../login/login.component";
 
 class HeaderComponent extends LitElement {
 
-  
   createRenderRoot() {
     return this;
-  }
-
-  registerDialog() {
-    return html`<login-component></login-component>`;
   }
 
   render() {
@@ -23,8 +18,8 @@ class HeaderComponent extends LitElement {
           <a class="nav-item" href="">How it works</a>
         </section>
         <div class="nav-log-container">
-          <a class="btn" @click=${this.registerDialog} href="">Log In</a>
-          <a class="btn" href="">Sign Up</a>
+        <login-component></login-component>
+          <button class="btn">Sign Up</button>
         </div>
       </nav>
     </header>

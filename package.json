@@ -37,13 +37,16 @@
     "sass": "^1.55.0",
     "stylelint": "14.11.0",
     "stylelint-config-standard": "28.0.0",
-    "tailwindcss": "^3.2.2",
-    "tw-elements": "1.0.0-alpha12",
     "typescript": "^4.9.3",
     "vite": "^3.1.0",
-    "lit": "2.4.1",
-    "rollup-plugin-visualizer": "5.8.3"
+    "rollup-plugin-visualizer": "5.8.3",
+    "tailwindcss": "3.2.4",
+    "htmlhint": "1.1.4"
   },
   "keywords": [],
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lit": "2.4.1",
+    "tw-elements": "1.0.0-alpha12"
+  }
 }
