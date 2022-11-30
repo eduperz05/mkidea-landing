@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit";
 import "./../login/login.component";
-
+import "./../signup/signup.component";
 class HeaderComponent extends LitElement {
 
   createRenderRoot() {
@@ -19,7 +19,7 @@ class HeaderComponent extends LitElement {
         </section>
         <div class="nav-log-container">
         <login-component></login-component>
-          <button class="btn">Sign Up</button>
+        <signup-component></signup-component>
         </div>
       </nav>
     </header>

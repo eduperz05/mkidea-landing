@@ -3,31 +3,29 @@
 @tailwind utilities;
 
 :root {
-
   /* Colors */
-  --primary-color: #5E44FF;
-  --primary-color-light: #9C71FF;
-  --primary-color-light-extra: #C8C0FF;
+  --primary-color: #5e44ff;
+  --primary-color-light: #9c71ff;
+  --primary-color-light-extra: #c8c0ffc4;
   --primary-color-dark: #433196;
   --primary-color-darker: #261a5a;
 
-  --secundary-color: #62D4B3;
-  --secundary-color-light: #A3F8E5;
-  --secundary-color-light-extra: #CAF8E5;
+  --secundary-color: #62d4b3;
+  --secundary-color-light: #a3f8e5;
+  --secundary-color-light-extra: #caf8e5;
   --secundary-color-dark: #49ad85;
   --secundary-color-dark: #2a5b48;
-  
-  --black-color: #5F656E;
-  --black-color-light: #5F656E;
+
+  --black-color: #5f656e;
+  --black-color-light: #5f656e;
   --black-color-light-extra: #a5a5a5;
-  --black-color-dark: #2F3337;
+  --black-color-dark: #2f3337;
   --black-color-dark: #000000;
 
   /* Fonts */
-  --primary-font: 'Inter', serif;
-  --title-font: 'Space Grotesk', serif;
-
+  --primary-font: "Inter", serif;
+  --title-font: "Space Grotesk", serif;
 
   /* Images */
-  --hero-pattern: url('/img/hero.jpg');
+  --hero-pattern: url("/img/hero.jpg");
 }

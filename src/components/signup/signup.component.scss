@@ -13,26 +13,32 @@
             @apply w-16;
           }
         }
-        .login-content {
+        .signup-content {
           @apply flex flex-col gap-3;
 
-          .login-title {
+          .signup-title {
             @apply text-2xl text-center mb-2 text-primary font-bold;
           }
 
           .username-text,
+          .email-text,
           .password-text {
             @apply text-sm font-medium;
           }
           .username-container,
+          .email-container,
           .password-container {
             @apply relative mb-0.5;
 
             #username,
+            #email,
             #password {
               @apply px-4 py-1.5 rounded-lg bg-primary-lighter border-black border-2;
             }
             #username::placeholder {
+              @apply text-sm text-black-lighter;
+            }
+            #email::placeholder {
               @apply text-sm text-black-lighter;
             }
             #password::placeholder {
@@ -43,19 +49,17 @@
             }
           }
         }
-        .forgot-password {
-          @apply flex justify-end text-sm text-primary hover:text-primary-lighter;
-        }
+
         .remember-me {
           @apply flex gap-3 text-sm accent-primary;
         }
-        .login-button-container {
+        .signup-button-container {
           @apply flex;
-          .login-button {
+          .signup-button {
             @apply w-full mt-1 mb-2;
           }
         }
-        .log-in-options {
+        .sign-up-options {
           @apply flex items-center justify-center gap-5 mb-2 text-sm text-black-lighter;
           .line {
             @apply w-16 h-0.5 bg-black-lighter;
@@ -64,9 +68,9 @@
         .social-media {
           @apply flex justify-evenly mb-2;
         }
-        .sign-up-option {
+        .log-in-option {
           @apply flex gap-2 text-sm;
-          .sign-up-link {
+          .log-in-link {
             @apply text-primary hover:text-primary-lighter;
           }
         }

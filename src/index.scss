@@ -1,5 +1,7 @@
 @import url("components/landing/style/_header.scss");
 @import url("components/header/header.component.scss");
+@import url("components/login/login.component.scss");
+@import url("components/signup/signup.component.scss");
 @import url("components/landing/style/_hero.scss");
 @import url("components/landing/style/_functions.scss");
 @import url("components/landing/style/_road-map.scss");
@@ -14,7 +16,6 @@
 
 @layer components {
   .app {
-
     & main {
       @apply flex flex-col gap-10;
     }
