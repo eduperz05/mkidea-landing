@@ -15,24 +15,24 @@ class SignUpComponent extends LitElement {
       <div class="modal-dialog dialog-container">
         <div class="dialog-content">
           <div class="image-container">
-            <img class="logo" src="img/Logo.png" alt="Page Logo">
+            <img class="logo" src="/img/Logo.png" alt="Page Logo">
           </div>
           <div class="signup-content">
             <h3 class="signup-title">Sign Up</h3>
             <label for="username" class="username-text">Username*</label>
             <div class="username-container">
               <input type="text" id="username" name="username" placeholder="Enter your Username">
-              <img class="user icon" src="img/user-icon.svg">
+              <img class="user icon" src="/img/user-icon.svg">
             </div>
             <label for="email" class="email-text">Email*</label>
             <div class="email-container">
               <input type="email" id="email" name="email" placeholder="name@email.com">
-              <img class="user icon" src="img/email-icon.svg">
+              <img class="user icon" src="/img/email-icon.svg">
             </div>
             <label for="password" class="password-text">Password*</label>
             <div class="password-container">
               <input type="password" id="password" name="password" placeholder="Enter your Password">
-              <img class="password icon" src="img/password-icon.svg">
+              <img class="password icon" src="/img/password-icon.svg">
             </div>
           </div>
           <div class="remember-me">
@@ -48,9 +48,9 @@ class SignUpComponent extends LitElement {
             <span class="line"></span>
           </div>
           <div class="social-media">
-            <a href=""><img src="img/github-icon.svg" width=28 height=28></a>
-            <a href=""><img src="img/linkedin-icon.svg" width=28 height=28></a>
-            <a href=""><img src="img/google-icon.svg" width=28 height=28></a>
+            <a href=""><img src="/img/github-icon.svg" width=28 height=28></a>
+            <a href=""><img src="/img/linkedin-icon.svg" width=28 height=28></a>
+            <a href=""><img src="/img/google-icon.svg" width=28 height=28></a>
           </div>
           <div class="log-in-option">
           <p>Already have an account?</p>

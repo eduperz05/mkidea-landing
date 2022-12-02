@@ -15,19 +15,19 @@ class LoginComponent extends LitElement {
       <div class="modal-dialog dialog-container">
         <div class="dialog-content">
           <div class="image-container">
-            <img class="logo" src="img/Logo.png" alt="Page Logo">
+            <img class="logo" src="/img/Logo.png" alt="Page Logo">
           </div>
           <div class="login-content">
             <h3 class="login-title">Login</h3>
             <label for="username" class="username-text">Username*</label>
             <div class="username-container">
               <input type="text" id="username" name="username" placeholder="Enter your Username">
-              <img class="user icon" src="img/user-icon.svg">
+              <img class="user icon" src="/img/user-icon.svg">
             </div>
             <label for="password" class="password-text">Password*</label>
             <div class="password-container">
               <input type="password" id="password" name="password" placeholder="Enter your Password">
-              <img class="password icon" src="img/password-icon.svg">
+              <img class="password icon" src="/img/password-icon.svg">
             </div>
           </div>
           <div class="forgot-password">
@@ -46,9 +46,9 @@ class LoginComponent extends LitElement {
             <span class="line"></span>
           </div>
           <div class="social-media">
-            <a href=""><img src="img/github-icon.svg" width=28 height=28></a>
-            <a href=""><img src="img/linkedin-icon.svg" width=28 height=28></a>
-            <a href=""><img src="img/google-icon.svg" width=28 height=28></a>
+            <a href=""><img src="/img/github-icon.svg" width=28 height=28></a>
+            <a href=""><img src="/img/linkedin-icon.svg" width=28 height=28></a>
+            <a href=""><img src="/img/google-icon.svg" width=28 height=28></a>
           </div>
           <div class="sign-up-option">
           <p>Don't have an account?</p>

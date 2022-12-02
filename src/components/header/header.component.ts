@@ -11,12 +11,12 @@ class HeaderComponent extends LitElement {
     return html`
     <header id="header" class="header">
       <nav class="header-navbar">
-        <img src="img/Logo.png" width="60" alt="">
-        <section class="navbar-navigation">
-          <a class="nav-item" href="">About Us</a>
+        <img src="/img/Logo.png" class="logo" alt="">
+        <nav class="navbar-navigation">
+          <a class="nav-item" href="/components/about-us/index.html">About Us</a>
           <a class="nav-item" href="">Contact</a>
-          <a class="nav-item" href="">How it works</a>
-        </section>
+          <a class="nav-item" href="/components/news/index.html">News</a>
+        </nav>
         <div class="nav-log-container">
         <login-component></login-component>
         <signup-component></signup-component>

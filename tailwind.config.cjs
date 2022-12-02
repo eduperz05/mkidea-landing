@@ -20,13 +20,14 @@ module.exports = {
         "black-lighter": "var(--black-color-light-extra)",
         "black-dark": "var(--black-color-dark)",
         "black-darker": "var(--black-color-darker)",
+        "headset": "var(--headset-color)",
       },
       fontFamily: {
         inter: "var(--primary-font)",
         spaceGrotesk: "var(--title-font)"
       },
       backgroundImage: {
-        "hero-pattern": "var(--hero-pattern)"
+        "hero-pattern": "var(--hero-pattern)",
       }
     }
   },
