@@ -4,11 +4,11 @@
 
 @layer components {
 .about-container{
-        @apply flex flex-col items-center box-border mt-10;
+        @apply flex flex-col items-center box-border ;
         .about-header{
-                @apply flex flex-col gap-6 items-center ;
+                @apply flex flex-col gap-6 items-center bg-[#5d44ff27] w-screen h-4/6 mb-8 ;
                 .team-title{
-                @apply flex flex-col items-center text-center text-2xl font-spaceGrotesk font-bold mb-5; 
+                @apply flex flex-col items-center text-center animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-5xl font-black mb-4 mt-6; 
                 }
                 .team-text{
                     @apply  flex flex-col items-center text-center text-primary;
@@ -21,14 +21,14 @@
                 }
         }
         .about-carrousel{
-            @apply w-2/4 h-96 mb-20 ;
+            @apply w-2/4 h-96 mb-20;
             .carrousel-image{
                 @apply rounded-xl border-black border-2;
             }
             .carousel-box{
-                @apply bg-black opacity-20;
+                @apply bg-[#000000e5];
                 .carousel-text{
-                    @apply opacity-100 text-primary;
+                    @apply font-inter text-[#3effc8];
                 }
             }
 
@@ -36,12 +36,12 @@
         .team-section{
             @apply flex flex-col items-center text-center mb-10;
             .leadership-team{
-                @apply flex flex-col items-center text-center text-2xl font-spaceGrotesk font-bold mb-5; 
+                @apply flex flex-col items-center  text-2xl font-spaceGrotesk font-bold mb-5 ; 
             }
             .about-cards{
                 @apply flex flex-wrap justify-center w-2/4 gap-20 mb-10;
                 .member-card{
-                    @apply flex flex-col items-center justify-center h-96 w-64 hover:border-2 hover:bg-slate-100 hover:rounded-xl hover:scale-110 cursor-pointer;
+                    @apply flex flex-col items-center justify-center h-96 w-64 hover:border-2 hover:bg-slate-100 hover:rounded-xl hover:scale-110 hover:shadow-lg cursor-pointer;
                     .card-image{
                         @apply  mb-3 ;
                         .member-image{
@@ -49,7 +49,7 @@
                         }
                     }
                     .card-text{
-                        @apply max-w-sm flex flex-col items-center text-center;
+                        @apply max-w-sm flex space-x-2 items-center text-center text-xl ;
                     }
                 }
             }
