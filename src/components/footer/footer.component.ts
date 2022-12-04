@@ -12,8 +12,8 @@ class FooterComponent extends LitElement {
       <div class="footer-section-container">
         <h4 class="section-title-white">Contact</h4>
         <ul>
-          <li><a href="#" class="footer-link">Phone Number</a></li>
-          <li><a href="#" class="footer-link">Email</a></li>
+          <li><a href="/components/contact/index.html" class="footer-link">Phone Number</a></li>
+          <li><a href="/components/contact/index.html" class="footer-link">Email</a></li>
           <li><a href="/components/contact/index.html" class="footer-link">Get Support</a></li>
         </ul>
       </div>
