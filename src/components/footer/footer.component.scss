@@ -1,17 +1,14 @@
 @layer components {
   .footer {
-    @apply w-full h-72 flex flex-row justify-around items-center bg-primary bg-cover;
-
+    @apply w-full h-48 py-10 flex items-start justify-around bg-primary bg-cover;
     .footer-section-container {
-      @apply flex flex-col items-start justify-center gap-4;
-
-      a {
-        @apply text-sm underline text-black-lighter;
+      @apply flex flex-col justify-center gap-2;
+      .footer-link {
+        @apply text-sm text-primary-lighter hover:text-slate-50;
       }
 
       .media-icons-container {
         @apply flex flex-row items-center justify-between gap-4;
-
         i {
           @apply text-3xl;
         }

@@ -1,13 +1,26 @@
 @layer components {
   .free-add-container {
-    @apply container mx-auto py-10 flex flex-row justify-center items-center gap-44;
-
-    .text-button-container {
-      @apply flex flex-col gap-6 items-center
+    @apply w-[690px] h-56 mx-auto flex gap-24 items-center bg-[#634bff11] rounded-r-xl mt-10 mb-16 shadow-sm shadow-slate-200;
+    .use-for-free-image {
+      @apply w-80 h-56 rounded-l-xl self-start;
     }
 
-    p {
-      @apply text-center text-xl text-primary;
+    .text-button-container {
+      @apply flex flex-col items-center gap-4 text-center;
+      .text-add-content {
+        @apply flex flex-col gap-2;
+        .add-text {
+          @apply text-lg text-[#080315a8] font-bold;
+        }
+
+        .add-subtext {
+          @apply text-[15px] text-black-light;
+        }
+      }
+
+      .use-for-free-btn {
+        @apply w-36;
+      }
     }
   }
 }

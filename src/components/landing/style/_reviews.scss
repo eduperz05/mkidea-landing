@@ -1,18 +1,20 @@
 @layer components {
   .reviews-container {
     @apply container mx-auto flex flex-col items-center justify-between gap-14 mb-8;
-
-    .title {
-      @apply text-center text-3xl underline font-bold text-primary;
-    }
-
     .reviews-cards-container {
-      @apply flex flex-row items-center justify-evenly gap-x-12;
-
+      @apply flex items-center justify-evenly gap-x-12;
       .review-card {
-        @apply border-slate-300 border-2 shadow-md shadow-slate-300 rounded-2xl text-center hover:scale-105 cursor-pointer;
+        @apply text-center border-slate-200 border-2 shadow-md shadow-slate-200 rounded-2xl hover:scale-105 cursor-pointer;
         .review-image {
-          @apply border-2 border-slate-300 shadow-md shadow-slate-300;
+          @apply border-2 border-slate-200 shadow-md shadow-slate-200;
+        }
+
+        .review-text-title {
+          @apply text-xl text-black;
+        }
+
+        .review-text {
+          @apply w-52 text-[15px] text-black-lighter;
         }
       }
     }

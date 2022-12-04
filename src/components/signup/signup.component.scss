@@ -1,21 +1,19 @@
 @layer components {
   .modal-container {
     @apply modal fixed top-0 left-0 hidden w-full h-full outline-none;
-
     .dialog-container {
       @apply modal-dialog-centered relative w-auto pointer-events-none;
       .dialog-content {
         @apply container modal-content border-none shadow-lg relative flex flex-col w-96 pointer-events-auto bg-white bg-clip-padding rounded-2xl outline-none text-current p-12 gap-3;
-
         .image-container {
           @apply flex justify-center;
           .logo {
-            @apply w-16;
+            @apply w-14;
           }
         }
+
         .signup-content {
           @apply flex flex-col gap-3;
-
           .signup-title {
             @apply text-2xl text-center mb-2 text-primary font-bold;
           }
@@ -25,25 +23,29 @@
           .password-text {
             @apply text-sm font-medium;
           }
+
           .username-container,
           .email-container,
           .password-container {
             @apply relative mb-0.5;
-
             #username,
             #email,
             #password {
               @apply px-4 py-1.5 rounded-lg bg-primary-lighter border-black border-2;
             }
+
             #username::placeholder {
               @apply text-sm text-black-lighter;
             }
+
             #email::placeholder {
               @apply text-sm text-black-lighter;
             }
+
             #password::placeholder {
               @apply text-sm text-black-lighter;
             }
+
             .icon {
               @apply w-4 absolute top-3 right-5;
             }
@@ -53,21 +55,25 @@
         .remember-me {
           @apply flex gap-3 text-sm accent-primary;
         }
+
         .signup-button-container {
           @apply flex;
           .signup-button {
             @apply w-full mt-1 mb-2;
           }
         }
+
         .sign-up-options {
           @apply flex items-center justify-center gap-5 mb-2 text-sm text-black-lighter;
           .line {
             @apply w-16 h-0.5 bg-black-lighter;
           }
         }
+
         .social-media {
           @apply flex justify-evenly mb-2;
         }
+
         .log-in-option {
           @apply flex gap-2 text-sm;
           .log-in-link {

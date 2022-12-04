@@ -12,8 +12,9 @@ class FooterComponent extends LitElement {
       <div class="footer-section-container">
         <h4 class="section-title-white">Contact</h4>
         <ul>
-          <li><a href="#">Phone Number</a></li>
-          <li><a href="#">Email</a></li>
+          <li><a href="#" class="footer-link">Phone Number</a></li>
+          <li><a href="#" class="footer-link">Email</a></li>
+          <li><a href="/components/contact/index.html" class="footer-link">Get Support</a></li>
         </ul>
       </div>
       <div class="footer-section-container">
@@ -28,8 +29,8 @@ class FooterComponent extends LitElement {
       <div class="footer-section-container">
         <h4 class="section-title-white">More Information</h4>
         <ul>
-          <li><a href="#">How it works</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="/components/about-us/index.html" class="footer-link">About Us</a></li>
+          <li><a href="/components/news/index.html" class="footer-link">News</a></li>
         </ul>
       </div>
     </footer>

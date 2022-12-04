@@ -7,21 +7,29 @@ tercero colores
 
 @layer components {
   .header {
-    @apply w-full border-black border-y-0 shadow-md shadow-slate-200 bg-white mt-0;
-
+    @apply w-full py-4 border-black border-y-0 shadow-md shadow-slate-200 bg-white mt-0;
     .header-navbar {
-      @apply container mx-auto flex justify-between items-center gap-4;
-      .logo {
-        @apply w-16;
-      }
-      .navbar-navigation {
-        @apply flex justify-evenly gap-x-24 font-bold text-primary;
-        .nav-item {
-          @apply underline hover:text-primary-lighter;
+      @apply grid grid-cols-3 items-center;
+      .logo-container {
+        @apply flex items-center justify-center gap-2;
+        .logo {
+          @apply w-14;
+        }
+
+        .brand-name {
+          @apply text-2xl font-spaceGrotesk text-primary font-bold;
         }
       }
+
+      .navbar-navigation {
+        @apply flex justify-evenly font-bold text-primary;
+        .nav-item {
+          @apply no-underline hover:text-primary-lighter;
+        }
+      }
+
       .nav-log-container {
-        @apply flex gap-x-12;
+        @apply flex items-center justify-center;
       }
     }
   }

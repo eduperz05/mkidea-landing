@@ -4,21 +4,21 @@
 
 :root {
   /* Colors */
-  --primary-color: #5e44ff;
-  --primary-color-light: #9c71ff;
-  --primary-color-light-extra: #c8c0ffb4;
+  --primary-color: #5e45fff6;
+  --primary-color-light: #9c71ffd4;
+  --primary-color-light-extra: #c5bcfbb4;
   --primary-color-dark: #433196;
   --primary-color-darker: #261a5a;
 
   --secondary-color: #62d4b3;
   --secondary-color-light: #a3f8e5;
-  --secondary-color-light-extra: #caf8e5;
+  --secondary-color-light-extra: #b4f5da;
   --secondary-color-dark: #49ad85;
   --secondary-color-dark: #2a5b48;
 
   --black-color: #5f656e;
   --black-color-light: #5f656e;
-  --black-color-light-extra: #a5a5a5;
+  --black-color-light-extra: #9a9a9a;
   --black-color-dark: #2f3337;
   --black-color-dark: #000000;
 
@@ -27,7 +27,4 @@
   /* Fonts */
   --primary-font: "Inter", serif;
   --title-font: "Space Grotesk", serif;
-
-  /* Images */
-  --hero-pattern: url("/img/hero.jpg");
 }

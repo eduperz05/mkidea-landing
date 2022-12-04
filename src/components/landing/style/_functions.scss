@@ -1,23 +1,27 @@
 @layer components {
   .functionality-container {
-    @apply h-96 container mx-auto flex items-center justify-center gap-28;
-
-    .functionality {
-      @apply relative h-52 max-w-[160px] py-2 border-slate-300 border-2 shadow-md shadow-slate-300 rounded-2xl text-center hover:scale-105 cursor-pointer;
-
-      .icon-container {
-        @apply w-10 h-10 bg-white rounded-full flex items-center justify-center absolute -top-5 right-14;
-        i {
-          @apply text-3xl text-primary font-bold;
+    @apply h-96 container mx-auto flex flex-col items-center justify-center gap-16 mt-8 mb-12;
+    .functionality-section {
+      @apply flex gap-24;
+      .functionality {
+        @apply relative h-60 w-48 py-4 border-slate-200 border-2 shadow-md shadow-slate-200 rounded-2xl text-center hover:scale-105 cursor-pointer;
+        .icon-container {
+          @apply w-11 h-11 flex items-center justify-center absolute -top-6 right-[70px] rounded-full bg-white;
+          i {
+            @apply text-2xl text-secondary-lighter;
+          }
         }
-      }
-    }
 
-    .functionality-text {
-      @apply pt-8;
+        .functionality-text {
+          @apply pt-8;
+          .section-title {
+            @apply text-primary-light;
+          }
 
-      p {
-        @apply p-3 text-sm text-black-lighter;
+          .sub-text {
+            @apply p-3 text-sm text-black-lighter;
+          }
+        }
       }
     }
   }
