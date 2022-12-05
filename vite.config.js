@@ -15,7 +15,7 @@ export default defineConfig({
   publicDir: "../public",
   build: {
     outDir: "../dist",
-    assetsDir: "../public",
+    assetsDir: "app/public",
     rollupOptions: {
       input: {
         main: resolve(PATH, "index.html"),

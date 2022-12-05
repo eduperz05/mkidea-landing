@@ -14,12 +14,18 @@
 @import url("components/footer/footer.component.scss");
 @import url("global/_global-components.scss");
 @import url("global/_variables.scss");
-@import "../node_modules/font-awesome/css/font-awesome.css";
+@import url("../node_modules/font-awesome/css/font-awesome.css");
 
 @layer components {
   .app {
     & main {
       @apply flex flex-col;
     }
+  }
+  .modal-backdrop {
+    @apply z-0 bg-primary-light;
+  }
+  .modal-backdrop.show {
+    @apply opacity-50;
   }
 }
