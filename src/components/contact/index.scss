@@ -3,73 +3,74 @@
 @tailwind utilities;
 
 @layer components {
-  .contact {
-    @apply bg-slate-100 h-screen;
-    .contact-container {
-      @apply w-full p-36 flex gap-5 items-center justify-evenly;
-      .left-section {
-        @apply w-[600px] flex flex-col gap-5 justify-center;
+  .contact-us-hero {
+    @apply bg-slate-200;
+    .contact-us-image {
+      @apply w-full h-[325px] object-fill py-5;
+    }
+  }
+  .contact-container {
+    @apply w-full p-12 flex gap-5 items-center justify-evenly;
+    .left-section {
+      @apply w-[600px] flex flex-col gap-5 justify-center;
+    }
+    .contact-title {
+      @apply text-5xl font-bold mb-2;
+    }
+    .contact-text {
+      @apply leading-7;
+    }
+    .contact-options {
+      @apply flex flex-col gap-2;
+      li {
+        @apply mx-2 text-[14px];
       }
-      .contact-title {
-        @apply text-5xl font-bold mb-2;
+    }
+    .contact-data {
+      @apply flex flex-col gap-1;
+      h1 {
+        @apply text-[16px] text-primary font-bold;
       }
-      .contact-text {
-        @apply leading-7;
+      p {
+        @apply text-[14px];
       }
-      .contact-options {
-        @apply flex flex-col gap-2;
-        li {
-          @apply mx-2 text-[14px];
-        }
+    }
+    .follow-us-section {
+      @apply flex items-center gap-4 text-primary font-bold;
+      i {
+        @apply text-2xl cursor-pointer;
       }
-      .contact-data {
-        @apply flex flex-col gap-1;
-        h1 {
-          @apply text-[16px] text-primary font-bold;
-        }
-        p {
-          @apply text-[14px];
-        }
-      }
-      .follow-us-section {
-        @apply flex items-center gap-4 text-primary font-bold;
-        i {
-          @apply text-2xl cursor-pointer;
-        }
 
-        .fa-twitter {
-          @apply text-blue-500;
-        }
+      .fa-twitter {
+        @apply text-blue-500;
+      }
 
-        .fa-instagram {
-          @apply text-pink-500;
-        }
+      .fa-instagram {
+        @apply text-pink-500;
+      }
 
-        .fa-facebook {
-          @apply text-blue-900;
-        }
+      .fa-facebook {
+        @apply text-blue-900;
+      }
 
-        .fa-linkedin {
-          @apply text-blue-500;
-        }
+      .fa-linkedin {
+        @apply text-blue-500;
       }
-      .right-section {
+    }
+    .form-group {
+      @apply mb-6 text-center accent-primary flex gap-2;
+      .form-control {
+        @apply block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
       }
-      .form-group {
-        @apply mb-6;
-        .form-control {
-          @apply block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
-        }
-        .form-check-input {
-          @apply appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer;
-        }
-        .form-check-label {
-          @apply inline-block text-gray-800;
-        }
+      .form-check-input {
+        @apply appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer;
       }
-      .send-button {
-        @apply w-full px-6 py-2.5 bg-primary text-white font-bold text-sm uppercase rounded shadow-md hover:bg-primary-light hover:shadow-lg focus:bg-primary-light focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-light active:shadow-lg transition duration-150 ease-in-out;
+      .form-check-label {
+        @apply inline-block text-gray-800;
       }
+    }
+    .send-button {
+      @apply w-full px-6 py-2.5 bg-primary text-white font-bold text-sm uppercase rounded shadow-md hover:bg-primary-light hover:shadow-lg focus:bg-primary-light focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-light active:shadow-lg transition duration-150 ease-in-out;
     }
   }
 }

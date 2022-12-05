@@ -10,7 +10,7 @@
       .media-icons-container {
         @apply flex flex-row items-center justify-between gap-4;
         i {
-          @apply text-3xl;
+          @apply text-3xl cursor-pointer;
         }
 
         .fa-twitter {

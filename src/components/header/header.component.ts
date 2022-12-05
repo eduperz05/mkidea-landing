@@ -17,11 +17,11 @@ class HeaderComponent extends LitElement {
         </div>
         <nav class="navbar-navigation">
           <a class="nav-item" href="/components/about-us/index.html">About Us</a>
-          <a class="nav-item" href="/components/contact/index.html">Contact</a>
           <a class="nav-item" href="/components/news/index.html">News</a>
+          <a class="nav-item" href="/components/contact/index.html">Contact</a>
         </nav>
         <div class="nav-log-container">
-        <login-component></login-component>
+          <login-component></login-component>
         </div>
       </nav>
     </header>

@@ -7,7 +7,7 @@ tercero colores
 
 @layer components {
   .header {
-    @apply w-full py-4 border-black border-y-0 shadow-md shadow-slate-200 bg-white mt-0;
+    @apply w-full py-4 border-black border-y-0 shadow-sm shadow-slate-200 bg-white mt-0;
     .header-navbar {
       @apply grid grid-cols-3 items-center;
       .logo-container {
