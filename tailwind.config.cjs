@@ -1,9 +1,24 @@
 /* eslint-disable quote-props */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,ts}"],
+  content: ["./src/**/*.{html,ts,css,scss}", "./node_modules/tw-elements/dist/js/**/*.js"],
   theme: {
     extend: {
+      animation: {
+        text: "text 5s ease infinite",
+      },
+      keyframes: {
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
+      },
       colors: {
         "primary": "var(--primary-color)",
         "primary-light": "var(--primary-color-light)",
@@ -20,13 +35,11 @@ module.exports = {
         "black-lighter": "var(--black-color-light-extra)",
         "black-dark": "var(--black-color-dark)",
         "black-darker": "var(--black-color-darker)",
+        "headset": "var(--headset-color)",
       },
       fontFamily: {
         inter: "var(--primary-font)",
         spaceGrotesk: "var(--title-font)"
-      },
-      backgroundImage: {
-        "hero-pattern": "var(--hero-pattern)"
       }
     }
   },
