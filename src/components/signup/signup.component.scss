@@ -27,7 +27,7 @@
           .username-container,
           .email-container,
           .password-container {
-            @apply relative mb-0.5;
+            @apply mb-0.5 flex w-full;
             #username,
             #email,
             #password {
@@ -47,7 +47,7 @@
             }
 
             .icon {
-              @apply w-4 absolute top-3 right-5;
+              @apply w-4 -translate-x-10;
             }
           }
         }

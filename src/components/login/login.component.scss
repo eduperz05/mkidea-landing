@@ -23,7 +23,7 @@
           }
           .username-container,
           .password-container {
-            @apply mb-0.5 flex;
+            @apply mb-0.5 flex w-full;
             #username,
             #password {
               @apply px-4 py-1.5 rounded-lg bg-primary-lighter border-black border-2;
