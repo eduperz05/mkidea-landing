@@ -23,7 +23,7 @@
           }
           .username-container,
           .password-container {
-            @apply relative mb-0.5;
+            @apply mb-0.5 flex w-full;
             #username,
             #password {
               @apply px-4 py-1.5 rounded-lg bg-primary-lighter border-black border-2;
@@ -35,7 +35,7 @@
               @apply text-sm text-black-lighter;
             }
             .icon {
-              @apply w-4 absolute top-3 right-5;
+              @apply w-4 -translate-x-10;
             }
           }
         }
