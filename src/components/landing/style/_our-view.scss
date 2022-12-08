@@ -1,15 +1,16 @@
 @layer components {
   .our-view-container {
-    @apply container mx-auto max-w-3xl flex flex-col justify-evenly items-center gap-y-8 py-9;
-
+    @apply mx-auto max-w-3xl flex flex-col justify-evenly items-center gap-y-8 py-9;
     .view-cards {
-      @apply flex items-center justify-between gap-x-52;
-
+      @apply flex items-center justify-between gap-x-32;
       .card {
-        @apply w-[400px] h-80 p-8 flex flex-col justify-center items-center border-2 border-black rounded-2xl;
+        @apply w-[350px] h-80 p-8 flex flex-col justify-center items-center border-2 rounded-2xl border-slate-200 shadow-md shadow-slate-200 text-center hover:scale-105 cursor-pointer;
+        .card-text {
+          @apply text-center text-xl text-secondary mb-5;
+        }
 
-        p {
-          @apply text-center text-xl text-primary;
+        .card-subtext {
+          @apply text-center text-sm text-black-lighter leading-6;
         }
       }
     }

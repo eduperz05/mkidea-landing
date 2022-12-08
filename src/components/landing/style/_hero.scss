@@ -1,13 +1,15 @@
-/*
-  TODO: //[url("img/hero.jpg")]
-*/
-
 @layer components {
   .hero-container {
-    @apply w-full h-96 flex flex-col justify-end items-center bg-hero-pattern bg-cover text-white font-bold;
-  }
+    @apply flex items-center justify-evenly bg-slate-100;
+    .hero-content {
+      @apply max-w-xl flex flex-col items-center;
+      .hero-title {
+        @apply text-4xl font-bold sm:text-center sm:text-6xl;
+      }
 
-  .hero-content {
-    @apply flex flex-col items-center gap-y-8 py-8;
+      .hero-text {
+        @apply max-w-lg mt-6 text-center text-lg text-black-light;
+      }
+    }
   }
 }
