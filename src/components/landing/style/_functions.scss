@@ -1,25 +1,31 @@
 @layer components {
   .functionality-container {
-    @apply h-96 container mx-auto flex flex-col items-center justify-center gap-16 mt-8 mb-12;
-    .functionality-section {
-      @apply flex gap-24;
-      .functionality {
-        @apply relative h-60 w-48 py-4 border-slate-200 border-2 shadow-md shadow-slate-200 rounded-2xl text-center hover:scale-105 cursor-pointer;
-        .icon-container {
-          @apply w-11 h-11 flex items-center justify-center absolute -top-6 right-[70px] rounded-full bg-white;
-          i {
-            @apply text-2xl text-secondary-lighter;
+    @apply mx-auto items-center justify-center gap-16 mt-8 mb-12;
+    .functionality-content {
+      @apply flex flex-col gap-14;
+      .title-primary {
+        @apply max-sm:text-[1.3rem];
+      }
+      .functionality-section {
+        @apply flex flex-wrap gap-16 justify-center max-sm:gap-8;
+        .functionality {
+          @apply relative h-60 w-48 py-4 border-slate-200 border-2 shadow-md shadow-slate-200 rounded-2xl text-center hover:scale-105 cursor-pointer max-sm:h-52 max-sm:w-36;
+          .icon-container {
+            @apply w-11 h-11 flex items-center justify-center absolute -top-6 right-[70px] rounded-full bg-white max-sm:right-[50px];
+            i {
+              @apply text-2xl text-secondary-lighter max-sm:text-xl;
+            }
           }
-        }
 
-        .functionality-text {
-          @apply pt-8;
-          .section-title {
-            @apply text-primary-light;
-          }
+          .functionality-text {
+            @apply pt-8;
+            .section-title {
+              @apply text-primary-light max-sm:text-[14px];
+            }
 
-          .sub-text {
-            @apply p-3 text-sm text-black-lighter;
+            .sub-text {
+              @apply p-3 text-sm text-black-lighter max-sm:text-xs;
+            }
           }
         }
       }

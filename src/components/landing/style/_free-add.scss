@@ -1,8 +1,8 @@
 @layer components {
   .free-add-container {
-    @apply w-[690px] h-56 mx-auto flex gap-24 items-center bg-[#634bff11] rounded-r-xl mt-10 mb-16 shadow-sm shadow-slate-200;
+    @apply w-[690px] h-56 mx-auto flex gap-24 items-center bg-[#634bff11] rounded-xl mt-10 mb-16 shadow-sm shadow-slate-200 max-sm:flex-col max-sm:w-60 max-sm:h-80 max-sm:gap-5;
     .use-for-free-image {
-      @apply w-80 h-56 rounded-l-xl self-start;
+      @apply w-80 h-56 rounded-l-xl self-start max-sm:rounded-t-xl max-sm:rounded-none max-sm:h-44;
     }
 
     .text-button-container {
@@ -10,16 +10,16 @@
       .text-add-content {
         @apply flex flex-col gap-2;
         .add-text {
-          @apply text-lg text-[#080315a8] font-bold;
+          @apply text-lg text-[#080315a8] font-bold max-sm:text-sm;
         }
 
         .add-subtext {
-          @apply text-[15px] text-black-light;
+          @apply text-[15px] text-black-light max-sm:text-xs;
         }
       }
 
       .use-for-free-btn {
-        @apply w-36;
+        @apply w-36 max-sm:w-24 max-sm:text-[13px];
       }
     }
   }

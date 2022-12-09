@@ -1,20 +1,23 @@
 @layer components {
   .reviews-container {
-    @apply container mx-auto flex flex-col items-center justify-between gap-14 mb-8;
+    @apply container mx-auto flex flex-col items-center justify-between gap-10 mb-8;
     .reviews-cards-container {
-      @apply flex items-center justify-evenly gap-x-12;
+      @apply flex items-center justify-evenly gap-x-12 max-sm:flex-wrap max-sm:gap-x-0 max-sm:gap-y-5;
       .review-card {
-        @apply text-center border-slate-200 border-2 shadow-md shadow-slate-200 rounded-2xl hover:scale-105 cursor-pointer;
+        @apply text-center border-slate-200 border-2 shadow-md shadow-slate-200 rounded-2xl hover:scale-105 cursor-pointer max-sm:w-40;
         .review-image {
-          @apply border-2 border-slate-200 shadow-md shadow-slate-200;
+          @apply border-2 border-slate-200 shadow-md shadow-slate-200 max-sm:w-24 max-sm:h-24;
         }
 
+        .stars-container i {
+          @apply max-sm:text-sm;
+        }
         .review-text-title {
-          @apply text-xl text-black;
+          @apply text-xl text-black max-sm:text-sm;
         }
 
         .review-text {
-          @apply w-52 text-[15px] text-black-lighter;
+          @apply w-52 text-[15px] text-black-lighter max-sm:w-32 max-sm:text-xs;
         }
       }
     }
