@@ -21,14 +21,14 @@
                 }
         }
         .about-carrousel{
-            @apply w-2/4 h-96 mb-20 max-sm:w-96 max-sm:flex-col max-sm:px-10 max-sm:mb-0;
+            @apply w-2/4 h-96 mb-20 max-sm:w-96 max-sm:h-52 max-sm:flex-col max-sm:px-10 max-sm:mb-0;
             .carrousel-image{
                 @apply rounded-xl border-black border-2;
             }
             .carousel-box{
-                @apply bg-[#000000e5];
+                @apply bg-[#000000e5] max-sm:h-28;
                 .carousel-text{
-                    @apply font-inter text-[#3effc8];
+                    @apply font-inter text-[#3effc8] max-sm:text-[12px];
                 }
             }
 
@@ -39,9 +39,9 @@
                 @apply flex flex-col items-center  text-2xl font-spaceGrotesk font-bold mb-5 ; 
             }
             .about-cards{
-                @apply flex flex-wrap justify-center w-2/4 gap-20 mb-10  ;
+                @apply flex flex-wrap justify-center w-2/4 gap-20 mb-10  max-sm:gap-0;
                 .member-card{
-                    @apply flex flex-col items-center justify-center h-96 w-64 hover:border-2 hover:bg-slate-100 hover:rounded-xl hover:scale-110 hover:shadow-lg cursor-pointer max-sm:h-64 max-sm:w-44 ;
+                    @apply flex flex-col items-center justify-center h-96 w-64 hover:border-2 hover:bg-slate-100 hover:rounded-xl hover:scale-110 hover:shadow-lg cursor-pointer max-sm:h-64 max-sm:w-44  ;
                     .card-image{
                         @apply  mb-3  ;
                         .member-image{
@@ -49,7 +49,7 @@
                         }
                     }
                     .card-text{
-                        @apply max-w-sm flex space-x-2 items-center text-center text-xl max-sm:text-base max-sm:flex-col;
+                        @apply max-w-sm flex space-x-2 items-center text-center text-xl max-sm:text-base max-sm:flex-col max-sm:w-[15px];
                     }
                 }
             }
