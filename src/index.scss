@@ -17,15 +17,19 @@
 @import url("../node_modules/font-awesome/css/font-awesome.css");
 
 @layer components {
-  .app {
-    & main {
-      @apply flex flex-col;
+  html,
+  body {
+    @apply w-full h-full m-0 p-0 overflow-x-hidden;
+    .app {
+      & main {
+        @apply flex flex-col;
+      }
     }
-  }
-  .modal-backdrop {
-    @apply z-0 bg-primary-light;
-  }
-  .modal-backdrop.show {
-    @apply opacity-50;
+    .modal-backdrop {
+      @apply z-0 bg-primary-light;
+    }
+    .modal-backdrop.show {
+      @apply opacity-50;
+    }
   }
 }
