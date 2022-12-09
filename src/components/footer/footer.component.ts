@@ -10,7 +10,7 @@ class FooterComponent extends LitElement {
     return html`
     <footer id="footer" class="footer">
       <div class="footer-section-container">
-        <h4 class="section-title-white">Contact</h4>
+        <h4 class="section-title-white max-sm:text-[15px]">Contact</h4>
         <ul>
           <li><a href="/components/contact/index.html" class="footer-link">Phone Number</a></li>
           <li><a href="/components/contact/index.html" class="footer-link">Email</a></li>
@@ -18,7 +18,7 @@ class FooterComponent extends LitElement {
         </ul>
       </div>
       <div class="footer-section-container">
-        <h4 class="section-title-white">Social Media</h4>
+        <h4 class="section-title-white max-sm:text-[15px]">Social Media</h4>
         <div class="media-icons-container">
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -27,7 +27,7 @@ class FooterComponent extends LitElement {
         </div>
       </div>
       <div class="footer-section-container">
-        <h4 class="section-title-white">More Information</h4>
+        <h4 class="section-title-white max-sm:text-[15px]">More</h4>
         <ul>
           <li><a href="/components/about-us/index.html" class="footer-link">About Us</a></li>
           <li><a href="/components/news/index.html" class="footer-link">News</a></li>
