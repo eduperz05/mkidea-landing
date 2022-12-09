@@ -1,16 +1,16 @@
 @layer components {
   .footer {
-    @apply w-full h-48 py-10 flex items-start justify-around bg-primary bg-cover;
+    @apply w-full h-48 py-10 flex items-start justify-around bg-primary bg-cover max-sm:justify-center max-sm:py-6 max-sm:gap-6;
     .footer-section-container {
       @apply flex flex-col justify-center gap-2;
       .footer-link {
-        @apply text-sm text-primary-lighter hover:text-slate-50;
+        @apply text-sm text-primary-lighter hover:text-slate-50 max-sm:text-xs;
       }
 
       .media-icons-container {
         @apply flex flex-row items-center justify-between gap-4;
         i {
-          @apply text-3xl cursor-pointer;
+          @apply text-3xl cursor-pointer max-sm:text-xl;
         }
 
         .fa-twitter {

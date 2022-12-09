@@ -10,9 +10,9 @@
     }
   }
   .contact-container {
-    @apply w-full p-12 flex gap-5 items-center justify-evenly;
+    @apply w-full p-12 flex gap-5 items-center justify-evenly max-sm:flex-col;
     .left-section {
-      @apply w-[600px] flex flex-col gap-5 justify-center;
+      @apply w-[600px] flex flex-col gap-5 justify-center max-sm:w-[325px] max-sm:text-center;
     }
     .contact-title {
       @apply text-5xl font-bold mb-2;
@@ -36,7 +36,7 @@
       }
     }
     .follow-us-section {
-      @apply flex items-center gap-4 text-primary font-bold;
+      @apply flex items-center gap-4 text-primary font-bold max-sm:justify-center;
       i {
         @apply text-2xl cursor-pointer;
       }
@@ -60,13 +60,13 @@
     .form-group {
       @apply mb-6 text-center accent-primary flex gap-2;
       .form-control {
-        @apply block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+        @apply block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-primary focus:outline-none;
       }
       .form-check-input {
-        @apply appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer;
+        @apply appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer;
       }
       .form-check-label {
-        @apply inline-block text-gray-800;
+        @apply text-sm text-gray-800;
       }
     }
     .send-button {
