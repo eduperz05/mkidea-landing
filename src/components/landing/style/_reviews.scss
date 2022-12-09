@@ -2,9 +2,9 @@
   .reviews-container {
     @apply container mx-auto flex flex-col items-center justify-between gap-14 mb-8;
     .reviews-cards-container {
-      @apply flex items-center justify-evenly gap-x-12;
+      @apply flex items-center justify-evenly gap-x-12 max-sm:grid;
       .review-card {
-        @apply text-center border-slate-200 border-2 shadow-md shadow-slate-200 rounded-2xl hover:scale-105 cursor-pointer;
+        @apply text-center border-slate-200 border-2 shadow-md shadow-slate-200 rounded-2xl hover:scale-105 cursor-pointer max-sm:pb-6 max-sm:grid-rows-3;
         .review-image {
           @apply border-2 border-slate-200 shadow-md shadow-slate-200;
         }

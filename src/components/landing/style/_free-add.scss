@@ -1,6 +1,6 @@
 @layer components {
   .free-add-container {
-    @apply w-[690px] h-56 mx-auto flex gap-24 items-center bg-[#634bff11] rounded-r-xl mt-10 mb-16 shadow-sm shadow-slate-200;
+    @apply w-[690px] h-56 mx-auto flex gap-24 items-center bg-[#634bff11] rounded-r-xl mt-10 mb-16 shadow-sm shadow-slate-200 max-sm:grid;
     .use-for-free-image {
       @apply w-80 h-56 rounded-l-xl self-start;
     }
