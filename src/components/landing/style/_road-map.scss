@@ -1,16 +1,19 @@
 @layer components {
-  .road-map {
-    @apply w-full h-["500px"] mb-5;
-    .carousel-inner {
-      @apply w-full h-[500px] overflow-hidden flex;
-      .carousel-caption {
-        @apply absolute top-0 bottom-0 flex flex-col items-center justify-center p-0;
-      }
-      .first-carousel-image {
-        @apply w-full -translate-y-10;
-      }
-      .carousel-image {
-        @apply w-full -translate-y-28;
+  .road-map-container {
+    @apply w-full mb-5;
+    .road-map {
+      @apply w-full;
+      .carousel-inner {
+        @apply w-full h-[500px] overflow-hidden flex;
+        .carousel-caption {
+          @apply absolute top-0 bottom-0 flex flex-col items-center justify-center p-0;
+        }
+        .first-carousel-image {
+          @apply w-full -translate-y-10;
+        }
+        .carousel-image {
+          @apply w-full -translate-y-28;
+        }
       }
     }
   }
