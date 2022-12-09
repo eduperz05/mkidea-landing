@@ -1,6 +1,6 @@
 @layer components {
   .news-container {
-    @apply flex flex-col items-center box-border mt-10;
+    @apply flex flex-col items-center box-border mt-10 max-sm:justify-center;
     .news-header {
       @apply flex flex-col gap-6 items-center;
       .headset-container {
@@ -11,7 +11,7 @@
       }
 
       .news-title {
-        @apply text-2xl font-spaceGrotesk font-bold mb-5;
+        @apply text-2xl font-spaceGrotesk font-bold mb-5 max-sm:justify-center;
       }
     }
 
@@ -22,7 +22,7 @@
     .featured-news {
       @apply flex flex-col gap-5 justify-center;
       .news-image-container {
-        @apply flex w-full;
+        @apply flex w-full px-2;
         .elon-image {
           @apply rounded-2xl border-black border-2;
         }
@@ -42,9 +42,9 @@
     }
 
     .news-section {
-      @apply flex flex-wrap justify-center w-3/4 gap-x-24 gap-y-10 mb-16 mt-5;
+      @apply flex flex-wrap justify-center w-3/4 gap-x-24 gap-y-10 mb-16 mt-5 max-sm:justify-center px-4;
       .news-report {
-        @apply flex flex-col items-center;
+        @apply flex flex-col items-center max-sm:justify-center px-4;
         .report-image-container {
           @apply h-80 w-96 mb-3;
           .report-image {
