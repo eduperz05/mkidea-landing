@@ -1,36 +1,79 @@
-/* 
-primero tamaño
-segundo posicion
-tercero colores
-último animaciones
-*/
-
 @layer components {
-  .header {
-    @apply w-full py-4 border-black border-y-0 shadow-sm shadow-slate-200 bg-white mt-0 sticky top-0 z-10;
-    .header-navbar {
-      @apply grid grid-cols-3 items-center;
-      .logo-container {
-        @apply flex items-center justify-center gap-2;
-        .logo {
-          @apply w-14;
-        }
-
-        .brand-name {
-          @apply text-2xl font-spaceGrotesk text-primary font-bold;
-        }
+  .top-nav {
+    @apply flex items-center justify-around h-24 py-4 w-full border-black border-y-0 shadow-sm shadow-slate-200 bg-white mt-0 sticky top-0 z-10 max-sm:justify-between max-sm:px-4;
+    .logo-container {
+      @apply flex items-center justify-center gap-2;
+      .logo {
+        @apply w-14 max-sm:w-12;
       }
-
-      .navbar-navigation {
-        @apply flex justify-evenly font-bold text-primary;
-        .nav-item {
-          @apply no-underline hover:text-primary-lighter;
-        }
-      }
-
-      .nav-log-container {
-        @apply flex items-center justify-center;
+      .brand-name {
+        @apply text-2xl font-spaceGrotesk text-primary font-bold;
       }
     }
+    #menu-toggle {
+      @apply hidden;
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button {
+      @apply bg-white;
+    }
+    #menu-toggle:checked + .menu-button-container .menu-button::before {
+      @apply mt-0 rotate-[405deg];
+    }
+    #menu-toggle:checked + .menu-button-container .menu-button::after {
+      @apply mt-0 rotate-[-405deg];
+    }
+
+    .menu-button-container {
+      @apply hidden w-8 h-full cursor-pointer flex-col items-center justify-center max-sm:flex;
+      .menu-button,
+      .menu-button::before,
+      .menu-button::after {
+        @apply block bg-[#a4adbb] absolute w-8 h-1 transition-transform ease-linear duration-300;
+      }
+
+      .menu-button::before {
+        @apply content-[""] -mt-2;
+      }
+
+      .menu-button::after {
+        @apply content-[""] mt-2;
+      }
+    }
+    .menu {
+      @apply flex items-center list-none gap-28 max-sm:gap-0 max-sm:flex max-sm:bg-white max-sm:absolute max-sm:top-0 max-sm:mt-[98px] max-sm:left-0 max-sm:flex-col max-sm:w-full max-sm:items-center max-sm:justify-center;
+      .nav-item {
+        @apply no-underline max-sm:font-light overflow-hidden;
+      }
+      li > a {
+        @apply text-primary font-bold hover:text-primary-lighter max-sm:text-slate-400;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
   }
 }

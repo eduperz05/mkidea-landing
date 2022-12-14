@@ -4,18 +4,18 @@
     .dialog-container {
       @apply modal-dialog-centered relative w-auto pointer-events-none;
       .dialog-content {
-        @apply container modal-content border-none shadow-lg relative flex flex-col w-96 pointer-events-auto bg-white bg-clip-padding rounded-2xl outline-none text-current p-12 gap-3;
+        @apply container modal-content border-none shadow-lg relative flex flex-col w-96 pointer-events-auto bg-white bg-clip-padding rounded-2xl outline-none text-current p-12 gap-3 max-sm:w-[325px] max-sm:h-[650px] max-sm:m-auto max-sm:flex max-sm:justify-center;
         .image-container {
           @apply flex justify-center;
           .logo {
-            @apply w-14;
+            @apply w-14 max-sm:w-10;
           }
         }
 
         .signup-content {
           @apply flex flex-col gap-3;
           .signup-title {
-            @apply text-2xl text-center mb-2 text-primary font-bold;
+            @apply text-2xl text-center mb-2 text-primary font-bold max-sm:text-xl;
           }
 
           .username-text,
@@ -27,7 +27,7 @@
           .username-container,
           .email-container,
           .password-container {
-            @apply mb-0.5 flex w-full;
+            @apply mb-0.5 relative flex w-full;
             #username,
             #email,
             #password {
@@ -47,7 +47,7 @@
             }
 
             .icon {
-              @apply w-4 -translate-x-10;
+              @apply w-4 absolute top-3 right-5;
             }
           }
         }
@@ -64,9 +64,9 @@
         }
 
         .sign-up-options {
-          @apply flex items-center justify-center gap-5 mb-2 text-sm text-black-lighter;
+          @apply flex items-center justify-center gap-5 mb-2 text-sm text-black-lighter max-sm:text-[12px];
           .line {
-            @apply w-16 h-0.5 bg-black-lighter;
+            @apply w-16 h-0.5 bg-black-lighter max-sm:w-12;
           }
         }
 

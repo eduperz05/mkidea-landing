@@ -6,6 +6,22 @@ class SignUpComponent extends LitElement {
     return this;
   }
 
+  closeModal() {            
+    const signup = document.querySelector("#ModalCenter");
+    const modalBackdrop = document.querySelector(".modal-backdrop");
+    const body = document.querySelector("body");
+    if (signup) {
+      body?.classList.remove("modal-open");
+      signup?.classList.add("invisible");
+    } else {
+      body?.classList.add("modal-close");
+      signup?.classList.remove("invisible");
+    }
+    if (modalBackdrop) {
+      modalBackdrop?.remove();
+    } 
+  }
+
   render() {
     return html`
     <div class="">
@@ -54,7 +70,7 @@ class SignUpComponent extends LitElement {
           </div>
           <div class="log-in-option">
           <p>Already have an account?</p>
-          <a href="" class="log-in-link">Log In</a>
+          <a href="" class="log-in-link" @click=${this.closeModal} data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Log In</a>
           </div>
         </div>
       </div>

@@ -1,15 +1,31 @@
 import { LitElement, html } from "lit";
 import "tw-elements";
-class LoginComponent extends LitElement {
+export class LoginComponent extends LitElement {
 
   createRenderRoot() {
     return this;
   }
 
+  closeModal() {            
+    const login = document.querySelector("#exampleModalCenter");
+    const modalBackdrop = document.querySelector(".modal-backdrop");
+    const body = document.querySelector("body");
+    if (login) {
+      body?.classList.remove("modal-open");
+      login?.classList.add("invisible");
+    } else {
+      body?.classList.add("modal-open");
+      login?.classList.remove("invisible");
+    }
+    if (modalBackdrop) {
+      modalBackdrop?.remove();
+    }
+  }
+
   render() {
     return html`
     <div class="">
-      <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Log In</button>
+      <button class="navbar-login-button" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Log In</button>
     </div>
     <div class="modal-container fade overflow-x-hidden overflow-y-auto" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true" role="dialog">
       <div class="modal-dialog dialog-container">
@@ -52,7 +68,7 @@ class LoginComponent extends LitElement {
           </div>
           <div class="sign-up-option">
           <p>Don't have an account?</p>
-          <a href="" class="sign-up-link">Sign Up</a>
+          <a href="" class="sign-up-link" data-bs-toggle="modal" data-bs-target="#ModalCenter" @click=${this.closeModal}>Sign Up</a>
           </div>
         </div>
       </div>
