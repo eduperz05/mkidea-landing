@@ -9,22 +9,22 @@ class HeaderComponent extends LitElement {
 
   render() {
     return html`
-    <header id="header" class="header">
-      <nav class="header-navbar">
+      <section class="top-nav">
         <div class="logo-container">
           <a href="/"><img src="/img/Logo.png" class="logo" alt="brand-logo"></a>
           <a href="/"><p class="brand-name">MKIDEA</p></a>
         </div>
-        <nav class="navbar-navigation">
-          <a class="nav-item" href="/components/about-us/index.html">About Us</a>
-          <a class="nav-item" href="/components/news/index.html">News</a>
-          <a class="nav-item" href="/components/contact/index.html">Contact</a>
-        </nav>
-        <div class="nav-log-container">
-          <login-component></login-component>
-        </div>
-      </nav>
-    </header>
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-button-container" for="menu-toggle">
+          <div class="menu-button"></div>
+        </label>
+        <ul class="menu">
+          <li><a class="nav-item" href="/components/about-us/index.html">About Us</a></li>
+          <li><a class="nav-item" href="/components/news/index.html">News</a></li>
+          <li><a class="nav-item" href="/components/contact/index.html">Contact</a></li>
+          <li class="nav-item ml-[340px]"><login-component></login-component></li>
+        </ul>
+      </section>
     `;
   }
 }
