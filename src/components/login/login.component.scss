@@ -1,21 +1,24 @@
 @layer components {
+  .navbar-login-button {
+    @apply sm:btn max-sm:text-primary max-sm:hover:text-primary-lighter;
+  }
   .modal-container {
     @apply modal fixed top-0 left-0 hidden w-full h-full outline-none;
     .dialog-container {
       @apply modal-dialog-centered relative w-auto pointer-events-none;
       .dialog-content {
-        @apply container modal-content border-none shadow-lg relative flex flex-col w-96 pointer-events-auto bg-white bg-clip-padding rounded-2xl outline-none text-current p-12 gap-3;
+        @apply container modal-content border-none shadow-lg relative flex flex-col w-96 pointer-events-auto bg-white bg-clip-padding rounded-2xl outline-none text-current p-12 gap-3 max-sm:w-[325px] max-sm:h-[650px] max-sm:m-auto max-sm:flex max-sm:justify-center;
         .image-container {
           @apply flex justify-center;
           .logo {
-            @apply w-14;
+            @apply w-14 max-sm:w-10;
           }
         }
 
         .login-content {
           @apply flex flex-col gap-3;
           .login-title {
-            @apply text-2xl text-center mb-2 text-primary font-bold;
+            @apply text-2xl text-center mb-2 text-primary font-bold max-sm:text-xl;
           }
           .username-text,
           .password-text {
@@ -23,7 +26,7 @@
           }
           .username-container,
           .password-container {
-            @apply mb-0.5 flex w-full;
+            @apply mb-0.5 relative flex w-full;
             #username,
             #password {
               @apply w-full px-4 py-1.5 rounded-lg bg-primary-lighter border-black border-2;
@@ -35,7 +38,7 @@
               @apply text-sm text-black-lighter;
             }
             .icon {
-              @apply w-4 -translate-x-10;
+              @apply w-4 absolute top-3 right-5;
             }
           }
         }
@@ -56,21 +59,14 @@
         }
 
         .log-in-options {
-          @apply flex items-center justify-center gap-5 mb-2 text-sm text-black-lighter;
+          @apply flex items-center justify-center gap-5 mb-2 text-sm text-black-lighter max-sm:text-[12px];
           .line {
-            @apply w-16 h-0.5 bg-black-lighter;
+            @apply w-16 h-0.5 bg-black-lighter max-sm:w-12;
           }
         }
 
         .social-media {
           @apply flex justify-evenly mb-2;
-        }
-
-        .sign-up-option {
-          @apply flex gap-2 text-sm;
-          .sign-up-link {
-            @apply text-primary hover:text-primary-lighter;
-          }
         }
       }
     }

@@ -1,10 +1,10 @@
 @layer components {
   .hero-container {
-    @apply flex items-center justify-evenly bg-slate-100 max-sm:flex-col max-sm:p-8 max-sm:text-center max-sm:gap-6;
+    @apply flex items-center justify-evenly bg-slate-100 max-sm:flex-col max-sm:p-8 max-sm:gap-6;
     .hero-content {
       @apply max-w-xl flex flex-col items-center;
       .hero-title {
-        @apply text-4xl font-bold sm:text-center sm:text-6xl;
+        @apply text-6xl font-bold text-center max-sm:text-4xl;
       }
 
       .hero-text {
