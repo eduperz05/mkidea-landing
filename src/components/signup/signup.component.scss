@@ -73,13 +73,6 @@
         .social-media {
           @apply flex justify-evenly mb-2;
         }
-
-        .log-in-option {
-          @apply flex gap-2 text-sm;
-          .log-in-link {
-            @apply text-primary hover:text-primary-lighter;
-          }
-        }
       }
     }
   }

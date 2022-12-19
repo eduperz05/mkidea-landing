@@ -14,7 +14,7 @@ class SignUpComponent extends LitElement {
       body?.classList.remove("modal-open");
       signup?.classList.add("invisible");
     } else {
-      body?.classList.add("modal-close");
+      body?.classList.add("modal-open");
       signup?.classList.remove("invisible");
     }
     if (modalBackdrop) {
@@ -67,10 +67,6 @@ class SignUpComponent extends LitElement {
             <a href=""><img src="/img/github-icon.svg" width=28 height=28></a>
             <a href=""><img src="/img/linkedin-icon.svg" width=28 height=28></a>
             <a href=""><img src="/img/google-icon.svg" width=28 height=28></a>
-          </div>
-          <div class="log-in-option">
-          <p>Already have an account?</p>
-          <a href="" class="log-in-link" @click=${this.closeModal} data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Log In</a>
           </div>
         </div>
       </div>

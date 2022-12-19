@@ -68,13 +68,6 @@
         .social-media {
           @apply flex justify-evenly mb-2;
         }
-
-        .sign-up-option {
-          @apply flex gap-2 text-sm;
-          .sign-up-link {
-            @apply text-primary hover:text-primary-lighter;
-          }
-        }
       }
     }
   }

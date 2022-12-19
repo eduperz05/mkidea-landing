@@ -6,22 +6,6 @@ export class LoginComponent extends LitElement {
     return this;
   }
 
-  closeModal() {            
-    const login = document.querySelector("#exampleModalCenter");
-    const modalBackdrop = document.querySelector(".modal-backdrop");
-    const body = document.querySelector("body");
-    if (login) {
-      body?.classList.remove("modal-open");
-      login?.classList.add("invisible");
-    } else {
-      body?.classList.add("modal-open");
-      login?.classList.remove("invisible");
-    }
-    if (modalBackdrop) {
-      modalBackdrop?.remove();
-    }
-  }
-
   render() {
     return html`
     <div class="">
@@ -66,9 +50,6 @@ export class LoginComponent extends LitElement {
             <a href=""><img src="/img/linkedin-icon.svg" width=28 height=28></a>
             <a href=""><img src="/img/google-icon.svg" width=28 height=28></a>
           </div>
-          <div class="sign-up-option">
-          <p>Don't have an account?</p>
-          <a href="" class="sign-up-link" data-bs-toggle="modal" data-bs-target="#ModalCenter" @click=${this.closeModal}>Sign Up</a>
           </div>
         </div>
       </div>
