@@ -1,6 +1,6 @@
 @layer components {
   .reviews-container {
-    @apply container mx-auto flex flex-col items-center justify-between gap-10 mb-8;
+    @apply container mx-auto flex flex-col items-center justify-between gap-10;
     .reviews-cards-container {
       @apply flex items-center justify-evenly gap-x-12 max-sm:flex-wrap max-sm:gap-x-0 max-sm:gap-y-5;
       .review-card {

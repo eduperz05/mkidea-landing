@@ -10,23 +10,7 @@
       .media-icons-container {
         @apply flex flex-row items-center justify-between gap-4;
         i {
-          @apply text-3xl cursor-pointer max-sm:text-xl;
-        }
-
-        .fa-twitter {
-          @apply text-blue-500;
-        }
-
-        .fa-instagram {
-          @apply text-pink-500;
-        }
-
-        .fa-facebook {
-          @apply text-white;
-        }
-
-        .fa-linkedin {
-          @apply text-blue-400;
+          @apply text-3xl cursor-pointer text-white max-sm:text-xl;
         }
       }
     }
