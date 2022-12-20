@@ -1,8 +1,8 @@
 @layer components {
   .our-view-container {
-    @apply mx-auto max-w-3xl flex flex-col justify-evenly items-center gap-y-8 py-9 max-sm:items-center;
+    @apply mx-auto max-w-3xl flex flex-col justify-evenly items-center gap-y-8 mt-20 mb-28 max-sm:items-center;
     .title-our-view {
-      @apply title-primary max-sm:text-[1.3rem];
+      @apply title-primary mb-5 max-sm:text-[1.3rem];
     }
     .view-cards {
       @apply flex items-center justify-between gap-x-32 max-sm:grid max-sm:gap-6;

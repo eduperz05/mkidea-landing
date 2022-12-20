@@ -46,7 +46,7 @@
         @apply no-underline max-sm:font-light overflow-hidden;
       }
       li > a {
-        @apply text-primary font-bold hover:text-primary-lighter max-sm:text-slate-400;
+        @apply text-primary font-bold hover:text-primary-dark max-sm:text-slate-400;
       }
     }
   }
