@@ -10,6 +10,9 @@ const PATH = path.join(__dirname, "/src/");
 
 export default defineConfig({
   root: "src",
+  server: {
+    port: 5175,
+  },
   base,
   mode,
   publicDir: "../public",
