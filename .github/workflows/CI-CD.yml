@@ -1,0 +1,30 @@
+name: building of landing and deploy to production droplet.
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  landing-building:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+      - name: Install dependencies
+        run: npm install
+      - name: building
+        run: npm run build
+      - name: Deploy to production
+        uses: AEnterprise/rsync-deploy@v1.0
+        env: 
+          DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "-e -c -r --delete"
+          SERVER_PORT: ${{ secrets.SERVER_PORT }}
+          FOLDER: "./dist/*"
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+          USERNAME: ${{ secrets.USERNAME }}
+          SERVER_DESTINATION: ${{ secrets.SERVER_DESTINATION }}
